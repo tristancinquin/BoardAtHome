@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+      <title>Board at Home- Edit Profile</title>
+{% endblock %}
+
+
+{% block body %}
+
+
+<div class="container" style="margin-top:8px">
+  <div class="row">
+    <div class="col-sm-5">
+      <h2>Edit your info here</h2>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{profile_form.as_p}}
+        <button type = "submit"> Submit </button>
+
+      </form>
+        </div>
+
+
+{% endblock %}

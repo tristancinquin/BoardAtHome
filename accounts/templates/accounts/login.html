@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Board at Home - Log in</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <h1> Welcome </h1>
+  <p> You can Log in here! </p>
+
+  <h2>Login</h2>
+
+  <form method = "post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type ="submit">Enter</button>
+  </form>
+<a href="http://127.0.0.1:8000/accounts/register" class="btn btn-info" role="button">New User? </a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+      {% block head %}
+      <title>Home</title>
+
+      {% endblock %}
+
+
+
+      {% block body %}
+
+
+      <div class="container" style="margin-top:8px">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <!-- <h2>About Me</h2> -->
+
+            <div class="container">
+          <img src="https://cdn.thewirecutter.com/wp-content/uploads/2018/03/boardgamesforadults-2x1-7452.jpg" alt="Italian Trulli" class= "img-fluid">
+
+          </div>
+          </div>
+         <div class ="col-sm-8">
+
+            <h2>Random Game</h2>
+            <p>Feeling lucky? Click any of the links below to get back a random game from our database.</p>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <button onclick="window.location.href = 'random';">Click Here</button>
+              </li>
+            </ul>
+            <hr class="d-sm-none">
+
+        </div>
+      </div>
+      <div class="jumbotron text-center" style="margin-top:10">
+
+        <p>Board At Home finds new board games based on what games you play. It can also find people near you who own the games you're interested in trying.</p>
+      </div>
+      </div>
+
+
+
+      {% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Board At Home - Register </title>
+
+{% endblock %}
+{% block body %}
+<div class="container">
+    <h1> Register </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ profile_form.as_p }}
+        <button type ="submit">Enter</button>
+    </form>
+
+</div>
+{% endblock %}
